@@ -1,0 +1,65 @@
+Automation:
+-----------
+Accuracy
+
+Time 
+
+less resources
+
+
+TL   identify what to automate , what not to automate
+
+TC Doc ---->Automation Team 
+
+Selenium :
+-----------  Open source Tool --->Functional Automation testing tool----------> WebApplication Testing 
+
+Selenium supports multiple browsers like FF, Chrome , IE, Opera 							,safary
+
+Selenium supports multiple os like windows, mac, linux/unix
+
+Selenium Supports multiple launguages like java, c#, 						Ruby,Python,Perl
+
+Selenium Supports cross browser testing ,cross plotform testing 
+
+			GRID 
+
+Selenium contains 4components
+
+
+1) Selenium IDE
+2) Selenium RC
+3) Selenium Webdriver
+4) Selenium Grid 
+
+
+Selenium IDE----> Intedrated Development Environemnt 
+
+			Recording and playback
+
+Selenese
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
