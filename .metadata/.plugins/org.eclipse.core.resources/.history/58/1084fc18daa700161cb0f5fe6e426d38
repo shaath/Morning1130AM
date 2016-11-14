@@ -1,0 +1,7 @@
+package com.orgHrm.Tests;
+
+public class Test123
+{
+	@org.testng.annotations.Test
+
+}

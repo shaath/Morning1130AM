@@ -1,0 +1,31 @@
+package com.OrgHrm.POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+public class LoginTc 
+{
+	@Test
+	public void login()
+	{
+		WebDriver driver=new FirefoxDriver();
+		
+		LoginPage lp=PageFactory.initElements(driver, LoginPage.class);
+		
+		driver.get(lp.url);
+		
+		lp.org_login(lp.u, lp.p);
+		
+		AdminLogin al=PageFactory.initElements(driver, AdminLogin.class);
+		
+		al.welcomeclick();
+		
+		al.logoutclick();
+		
+		driver.close();
+		
+	}
+
+}

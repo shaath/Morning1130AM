@@ -1,0 +1,13 @@
+package com.OrgHrm.POM;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class Contstants 
+{
+	System.setProperty("webdriver.chrome.driver", "F:\\Cdownloads\\chromedriver.exe");
+	ChromeDriver driver=new ChromeDriver();
+	
+	LoginPage lp=PageFactory.initElements(driver, LoginPage.class);
+	AdminLogin al=PageFactory.initElements(driver, AdminLogin.class);
+}

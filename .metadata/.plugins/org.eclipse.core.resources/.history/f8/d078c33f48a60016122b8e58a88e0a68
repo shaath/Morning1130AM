@@ -1,0 +1,36 @@
+package com.OrgHrm.POM;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+public class LoginTc 
+{
+	@Test
+	public void login()
+	{
+		System.setProperty("webdriver.chrome.driver", "F:\\Cdownloads\\chromedriver.exe");
+		ChromeDriver driver=new ChromeDriver();
+			
+		LoginPage lp=PageFactory.initElements(driver, LoginPage.class);
+		
+		driver.get(lp.url);
+		driver.manage().window().maximize();
+		
+		
+		lp.org_login(lp.u, lp.p);
+		Sleeper.sleepTightInSeconds(5);
+		AdminLogin al=PageFactory.initElements(driver, AdminLogin.class);
+		
+		al.welcomeclick();
+		
+		al.logoutclick();
+		
+		driver.close();
+		
+	}
+
+}
